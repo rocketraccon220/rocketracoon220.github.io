@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Hello there!</title>
+  <title>My Simple Website</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -45,6 +45,12 @@
       text-align: center;
     }
   </style>
+  <script>
+    function changeHeading() {
+      var heading = document.getElementById('dynamic-heading');
+      heading.innerHTML = 'New Heading Text!';
+    }
+  </script>
 </head>
 <body>
   <header>
@@ -60,12 +66,24 @@
   </nav>
 
   <section>
-    <h2>About</h2>
+    <h2 id="dynamic-heading">About</h2>
     <p>This is a simple website created using HTML.</p>
+    <button onclick="changeHeading()">Change Heading</button>
   </section>
 
   <footer>
-    <p>&copy; 2023 Anirudh A S. All rights reserved.</p>
+    <p>&copy; 2023 My Simple Website. All rights reserved.</p>
   </footer>
 </body>
 </html>
+In the code above, we added a JavaScript function called changeHeading(), which is called when the button is clicked. It retrieves the element with the dynamic-heading ID using getElementById, and then modifies the innerHTML property to change the heading text.
+
+When you open the updated HTML file in a web browser, you will see a "Change Heading" button. Clicking the button will change the text of the heading dynamically.
+
+This is just a simple example, but with JavaScript, you can add more complex functionality and interactivity to your website, such as form validation, dynamic content loading, animations, and more.
+
+
+
+
+
+
